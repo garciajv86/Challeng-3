@@ -35,8 +35,9 @@ function generatePassword() {
   } else {
     charType.push(0)
   }
-  console.log(lower)
-  console.log(charType)
+  
+  // Alert validation message
+  alert(`You chose ${lower} for lowercase characters in your password.`)
 
   // Second confirm user to see if they would like uppercase letters
   var upper = confirm("Press ok to include uppercase characters in your password, else cancel to not include uppercase characters.");
@@ -47,8 +48,9 @@ function generatePassword() {
   }else {
     charType.push(0)
   }
-  console.log(upper)
-  console.log(charType)
+  
+  // Alert validation message
+  alert(`You chose ${upper} for uppercase characters in your password.`)
 
   // Third confirm user to see if they would like numerics in their password
   var num = confirm("Press ok to include numeric characters in your password, else cancel to not include numeric characters.");
@@ -59,8 +61,9 @@ function generatePassword() {
   }else {
     charType.push(0);
   }
-  console.log(num)
-  console.log(charType)
+  
+  // Alert validation message
+  alert(`You chose ${num} for numeric characters in your password.`)
 
   // Fourth confirm user to see if they would like special characters in their password
   var special = confirm("Press ok to include special characters in your password, else cancel to not include special characters.");
@@ -71,8 +74,11 @@ function generatePassword() {
   }else {
     charType.push(0)
   }
-  console.log(special)
-  console.log(charType)
+  
+  // Alert validation message
+  alert(`You chose ${special} for special characters in your password.`)
+
+
   
 }
 
